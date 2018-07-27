@@ -7,4 +7,5 @@
     <input type="checkbox" name="done" disabled="true"><span>This task is not completed</span>
   <% end %>
 </div>
+<%= link_to "Edit Task", edit_task_path(@task.id) %>
 <%= link_to "Back to List", root_path %>
