@@ -6,6 +6,6 @@
   <% else %>
     <input type="checkbox" name="done" disabled="true">
   <% end %>
-  <%= task.title %>: <%= task.details %></li>
+  <%= link_to "#{task.title}", task_path(task.id) %>: <%= task.details %></li>
 <% end %>
 </ul>
